@@ -12,7 +12,7 @@ export const CurrentTime: React.FC = () => {
         if (prev.isSame(currentTime, 'minute')) {
           return prev;
         }
-        return currentTime
+        return currentTime;
       });
     }, 1000);
     return () => clearInterval(interval);
