@@ -21,7 +21,7 @@ export const DualHour: React.FC<{
   isCurrentTime?: boolean;
 }> = ({ time, isCurrentTime }) => {
   const lunarHour = time.toLunarHour();
-  const luck = lunarHour.getMinorRen().getLuck().getName();
+  const luck = lunarHour.getTwelveStar().getEcliptic().getLuck().getName();
   const sixtyCycle = lunarHour.getSixtyCycle();
   const heavenStem = sixtyCycle.getHeavenStem();
   const earthBranch = sixtyCycle.getEarthBranch();

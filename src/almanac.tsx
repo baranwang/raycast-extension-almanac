@@ -16,7 +16,7 @@ export default function LunarCalendarApp() {
 
   const lunarDate = useMemo(() => selectedDate.toLunarDay(), [selectedDate]);
 
-  const luck = useMemo(() => lunarDate.getMinorRen().getLuck().getName(), [lunarDate]);
+  const luck = useMemo(() => lunarDate.getTwelveStar().getEcliptic().getLuck().getName(), [lunarDate]);
 
   const sixtyCycleInfo = useMemo(() => lunarDate.getSixtyCycle(), [lunarDate]);
 
